@@ -69,7 +69,23 @@ for j in range(k) :
             elif j == 1:
                 counter1 += 1        
                 
-                
+#plot clusters using scatter plot
+df = pd.DataFrame(data_array, columns=['Age', 'User'])
+df['Cluster'] = labels
+fig = px.scatter(df, x='Age', y='User', color='Cluster',
+                 title='K-Medoids Clustering',
+                 labels={'Age': 'Age', 'User': 'User'},
+                 color_continuous_scale=px.colors.qualitative.Light24)
+
+fig.add_scatter(x=clusters[:, 0], y=clusters[:, 1], mode='markers',
+                marker=dict(color='red', symbol='x', size=10),
+                name='Cluster Centers')
+fig.update_layout(height=600,width=1100,legend=dict(yanchor='top',y=0.99,xanchor='left',x=0.84))
+fig.show()
+#compare users number
+print('Number of users with an average age of 26:', counter0)
+print('Number of users with an average age of 39:', counter1)
+
 # The hirerachial Method: 
 # Slicing the data
 sub_sample = data.loc[0:50]
@@ -77,12 +93,10 @@ columns_sub_sample = sub_sample[['age','user']]
 data_array_sub_sample = np.array(columns_sub_sample)
 
 # Graghing the data
-plt.figure(figsize=(10, 6))
-plt.scatter(data_array_sub_sample[:, 0], data_array_sub_sample[:, 1], c = 'r')  
-plt.xlabel('age')
-plt.ylabel('user')
-plt.grid()
-plt.show()
+df = pd.DataFrame({'Age': data_array_sub_sample[:, 0], 'User': data_array_sub_sample[:, 1]})
+fig = px.scatter(df, x='Age', y='User', labels={'Age': 'Age', 'User': 'User'}, title='Scatter Plot of Age vs User')
+fig.update_layout(height=500,width=1100)
+fig.show()
 
 # The linkage functions
 z1 = linkage(data_array, method = 'single', metric = 'euclidean')
@@ -137,4 +151,12 @@ fig.update_yaxes(title_text='count')
 fig.update_layout(width=1100, height=600)
 fig.show()
 
-
+#The most time we get new users
+hours=data['hour'].dt.components['hours']
+hours=hours.value_counts()
+hours=pd.DataFrame({'hour':hours.index,'count':hours.values})
+fig=px.bar(hours,x='hour',y='count')
+fig.update_xaxes(title_text='Hours')
+fig.update_yaxes(title_text='Number Of Users')
+fig.update_layout(width=1100,height=600)
+fig.show()

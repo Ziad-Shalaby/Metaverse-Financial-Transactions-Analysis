@@ -151,7 +151,7 @@ fig.update_yaxes(title_text='count')
 fig.update_layout(width=1100, height=600)
 fig.show()
 
-#The most time we get new users
+#The most time users use our app
 hours=data['hour'].dt.components['hours']
 hours=hours.value_counts()
 hours=pd.DataFrame({'hour':hours.index,'count':hours.values})

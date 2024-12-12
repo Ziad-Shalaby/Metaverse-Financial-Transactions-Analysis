@@ -1,13 +1,11 @@
-# Metaverse Financial Transactions Analysis:
+# App Behavior Analysis Project:
 
-Unlock insights into virtual economy trends.
-This project utilizes the Metaverse Financial Transactions Dataset to explore and analyze financial activities within virtual environments. By applying advanced data mining techniques and machine learning models, the project aims to uncover patterns, anomalies, and key trends in the emerging virtual economy.
+Gain insights into user interactions with financial applications.
+This project analyzes behavioral data from financial application users to uncover trends and patterns that can help optimize user experience and engagement. By applying clustering algorithms and visualization techniques, the analysis provides a comprehensive understanding of user behavior.
 
 Key Features:
 
-- Comprehensive preprocessing of transaction data for accuracy.
-- Application of clustering and classification models to identify user behaviors.
-   
-This project highlights the intersection of data science and virtual economies, showcasing expertise in analyzing financial behavior in the evolving metaverse landscape.
-
-dataset link: https://www.kaggle.com/datasets/faizaniftikharjanjua/metaverse-financial-transactions-dataset
+- Data preprocessing: Handling timestamps, renaming columns, and correcting data types.
+- Application of clustering methods like K-Medoids and hierarchical clustering.
+- Interactive visualizations using Seaborn, Matplotlib, and Plotly for deeper insights.
+- Identification of behavioral patterns to inform application optimization strategies.

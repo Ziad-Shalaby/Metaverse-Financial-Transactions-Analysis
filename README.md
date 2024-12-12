@@ -9,3 +9,5 @@ Key Features:
 - Application of clustering methods like K-Medoids and hierarchical clustering.
 - Interactive visualizations using Seaborn, Matplotlib, and Plotly for deeper insights.
 - Identification of behavioral patterns to inform application optimization strategies.
+
+Dataset link: https://www.kaggle.com/datasets/faizaniftikharjanjua/metaverse-financial-transactions-dataset

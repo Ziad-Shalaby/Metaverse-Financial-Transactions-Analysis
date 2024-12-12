@@ -1,4 +1,5 @@
-#Metaverse Financial Transactions Analysis:
+##Metaverse Financial Transactions Analysis:
+
 Unlock insights into virtual economy trends.
 This project utilizes the Metaverse Financial Transactions Dataset to explore and analyze financial activities within virtual environments. By applying advanced data mining techniques and machine learning models, the project aims to uncover patterns, anomalies, and key trends in the emerging virtual economy.
 

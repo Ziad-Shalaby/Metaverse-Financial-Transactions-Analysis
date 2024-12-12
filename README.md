@@ -1,13 +1,23 @@
 # App Behavior Analysis Project:
 
-Gain insights into user interactions with financial applications.
-This project analyzes behavioral data from financial application users to uncover trends and patterns that can help optimize user experience and engagement. By applying clustering algorithms and visualization techniques, the analysis provides a comprehensive understanding of user behavior.
+This project focuses on analyzing user interactions with financial applications to uncover trends and patterns that can enhance user experience and engagement. By leveraging clustering algorithms and visualization techniques, it provides actionable insights into user behavior.
 
-Key Features:
+## Features: 
 
-- Data preprocessing: Handling timestamps, renaming columns, and correcting data types.
-- Application of clustering methods like K-Medoids and hierarchical clustering.
-- Interactive visualizations using Seaborn, Matplotlib, and Plotly for deeper insights.
-- Identification of behavioral patterns to inform application optimization strategies.
+### Data Preprocessing:
+
+- Handled timestamps and corrected data types for consistency.
+- Renamed columns to improve data readability.
+- 
+### Clustering Analysis:
+
+- Applied K-Medoids and hierarchical clustering to group users based on behavioral similarities.
+Behavioral Insights:
+
+- Identified key patterns in user interactions to inform app optimization strategies.
+
+### Visualizations:
+
+- Used Seaborn, Matplotlib, and Plotly to create detailed, interactive charts for exploring trends.
 
 Dataset link: https://www.kaggle.com/datasets/faizaniftikharjanjua/metaverse-financial-transactions-dataset
